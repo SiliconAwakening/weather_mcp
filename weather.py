@@ -67,7 +67,7 @@ class MCPHandler(http.server.SimpleHTTPRequestHandler):
 
             if tool_name == "getWeather":
                 city = params.get("city")
-                api_key = "947123b6cf5df2309f60b53679ca089c"
+                api_key = "YOUR_API_KEY"
                 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
                 response = requests.get(url)
                 if response.status_code == 200:
